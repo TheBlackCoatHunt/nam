@@ -49,8 +49,8 @@ class FoldedDataset(NAMDataset):
                 fold_num -= 1
 
     def train_dataloaders(self,
-                          test_size: int = 0.00000125,
-                          shuffle: bool = True,
+                          test_size: int = 0.125,
+                          shuffle: bool = False,
                           random_state: int = 42) -> Tuple[DataLoader, ...]:
 
         num_folds = self.config.num_folds
