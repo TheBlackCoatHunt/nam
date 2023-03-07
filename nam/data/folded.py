@@ -49,7 +49,7 @@ class FoldedDataset(NAMDataset):
                 fold_num -= 1
 
     def train_dataloaders(self,
-                          test_size: int = 10.0,
+                          test_size: int = 0.0001,
                           shuffle: bool = True,
                           random_state: int = 42) -> Tuple[DataLoader, ...]:
 
